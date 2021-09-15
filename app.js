@@ -6,7 +6,7 @@ const got = require('./controllers');
 // const app = express();
 app.use(express.json());
 
-const PORT = 4000;
+PORT = process.env.PORT = 4000;
 
 app.get('/', function (req, res) {
   res.send(
